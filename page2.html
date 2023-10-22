@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page product</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="slider.js"></script>
+</head>
+<body>
+    <header class="header">
+<nav>
+    <ul>
+        <li><strong>Ecommerce</strong></li>
+        <li>
+            <a href="shop_Page.html">Shop</a>
+        </li>
+        <li>
+            <a href="#">Stories</a>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li class="recherche">
+            <a href="#"><img src="icones/loupe.svg" alt="image d'une loupe">Search</a>
+        </li>
+        <div class="alignerdroite">
+            <li>
+                <a href="#"><img src="icones/sac.svg" alt="sac de course"></a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </div>
+    </ul>
+</nav>
+    </header>
+    <h1> Les Bijoux</h1>
+    <div id="slider">
+        <img src="im1.jpg" alt="Bijoux" id="slide">
+        <div id="precedent" onclick="ChangeSlide(-1)"></div>
+        <div id="suivant" onclick="ChangeSlide(1)">></div>
+    </div>
+    <br>
+    <div class="texte">
+        <div>
+            <h2>Les meilleur Bijoux</h2>
+            <h4>Prix: 600€</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ipsa voluptatum quas suscipit assumenda aspernatur ut incidunt, magnam aperiam non repellendus natus iste. Possimus facilis libero aut ipsa quibusdam corporis.</p>
+        </div>
+        <div>
+            <p class="quantite"> - 1 +</p>
+        </div>
+        <div class="choix">
+            <label for="choix-select">Faire votre choix:</label><br>
+            <select name="choix" id="choix-select">
+                <option value="">Faire votre choix</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div> <br>
+
+        <div>
+            <button class="addPanier">Ajouter au panier</button>
+        </div>
+        <br>
+        <div>
+            <button class="achat">Acheter</button>
+        </div>
+    </div>
+   
+</div>
+    
+     <footer>
+        <div class="flexbox">
+            <ul id="research">
+                <b id="Sign-up">Sign up for our newsletter</b>
+                <br>
+                <br>
+                <strong>Be the first to know about our special offers, new product launches, and events</strong>
+                <br>
+                <br>
+                <ul>
+                <input type="text" value="Email Adress" class="Email-Adress">
+                <a href="#" class="Sign-Up">Sign Up</a>                 
+                </ul>
+            </ul>
+            <ul>
+                <strong>Shop</strong>
+                <br>
+                <br>
+                <a href="#">Women's</a>
+                <br>
+                <a href="#">Men's</a>
+                <br>
+                <a href="#">Kids'</a>
+                <br>
+                <a href="#">Shoes</a>
+                <br>
+                <a href="#">Equipment</a>
+                <br>
+                <a href="#">By Activity</a>
+                <br>
+                <a href="#">Gift Cards</a>
+                <br>
+                <a href="#">Sale</a>
+            </ul>
+            <ul>
+                <strong>Help</strong>
+                <br>
+                <br>
+                <a href="#">Help Center</a>
+                <br>
+                <a href="#">Order Status</a>
+                <br>
+                <a href="#">Size Chart</a>
+                <br>
+                <a href="#">Returns & Warranty</a>
+                <br>
+                <a href="#">Contact us</a>
+            </ul>
+            <ul>
+                <strong>About</strong>
+                <br>
+                <br>
+                <a href="#">About Us</a>
+                <br>
+                <a href="#">Responsibility</a>
+                <br>
+                <a href="#">Technology & Innovation</a>
+                <br>
+                <a href="#">Explore our stories</a>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
