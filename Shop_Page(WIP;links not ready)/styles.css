@@ -1,0 +1,307 @@
+/* overall */
+
+@font-face {
+    font-family: "Public sans";
+    src: url(./polices/PublicSans-Regular.ttf) format(truetype);
+}
+
+* {
+    font-family: "Public Sans";
+}
+
+body {
+    margin: 0;
+}
+
+/* header */
+
+nav {
+    display: inline-block;
+    background-color: black;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+nav ul {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    text-align: center;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav li img {
+    height: 20px;
+    width: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.recherche img {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.alignerdroite {
+    float: right;
+}
+
+header {
+    background-color: black;
+}
+
+header h1 {
+    margin-top: 0;
+    padding-top: 1%;
+    margin-left: 7.5%;
+    color: white;
+}
+
+header h4 {
+    margin-left: 7.5%;
+    color: white;
+    padding-bottom: 1%;
+    margin-bottom: 0;
+}
+
+/* main */
+
+.page {
+    display: flex;
+}
+
+/* filtres */
+
+.filtres {
+    flex: 10%;
+    margin-left: 7.5%;
+    margin-right: 5%;
+}
+
+.enligne {
+    display: flex;
+    align-items: flex-end;
+}
+
+.enligne h2 {
+    padding-right: 10px;
+}
+
+.enligne h5 {
+    color: lightgray;
+}
+
+.enligne h5:hover {
+    text-decoration: underline;
+}
+
+.couleurs {
+    display: flex;
+}
+
+.couleurs2 {
+    display: flex;
+}
+
+.cercle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.brown {
+    background-color: brown;
+}
+/* grid */
+
+.grid {
+    justify-content: right;
+    margin: 50px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    flex: 70%;
+    margin-right: 7.5%;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#item1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#item2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#item3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#item4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#item5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#item6 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.ficheProduit {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    grid-column: span 2;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+.description {
+    text-align: left;
+    grid-column: 1;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.taille {
+    text-align: right;
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 100px;
+}
+
+.newsletter {
+    width: 30%;
+    padding-left: 200px;
+    padding-right: 50px;
+}
+
+.newsletter h2 {
+    padding-top: 20px;
+}
+
+.liens ul {
+    width: 18%;
+}
+
+footer li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+footer a {
+    color: grey;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.liens {
+    width: 70%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+footer input[type=email] {
+    width: 80%;
+    height: 30px;
+    background-color: lightgray;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+footer input[type=submit] {
+    border: none;
+    background-color: lightgray;
+}
+
+footer input[type=submit]:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
