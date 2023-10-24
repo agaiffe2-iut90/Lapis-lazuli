@@ -10,29 +10,36 @@
 
 <body>
     <nav>
-        <ul>
-            <li><strong>Ecommerce</strong></li>
-            <li>
-                <a href="shop_Page.html">Shop</a>
-            </li>
-            <li>
-                <a href="#">Stories</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li class="recherche">
-                <a href="#"><img src="icones/loupe.svg" alt="image d'une loupe">Search</a>
-            </li>
-            <div class="alignerdroite">
-                <li>
-                    <a href="#"><img src="icones/sac.svg" alt="sac de course"></a>
-                </li>
-                <li>
-                    <a href="#">Login</a>
-                </li>
+        <div class="nav">
+            <div class="alignergauche">
+                <ul>
+                    <li><strong>Ecommerce</strong></li>
+                    <li>
+                        <a href="shop_Page.html">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Stories</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li class="recherche">
+                        <a href="#"><img src="icones/loupe.svg" alt="image d'une loupe">Search</a>
+                    </li>
             </div>
-        </ul>
+            <div class="alignerdroite">
+                <ul>
+                    <li>
+                        <a href="#"><img src="icones/sac.svg" alt="sac de course"></a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            </ul>
+        </div>
     </nav>
     <header>
         <h1>Shop Men's</h1>
@@ -49,111 +56,130 @@
                 </div>
                 <h5>Catégories</h5>
                 <form method="get">
-                    <label for="case1">Jackets</label>
                     <input type="checkbox" name="case1" id="case1">
+                    <label for="case1">Jackets</label>
                     <br>
-                    <label for="case2">Fleece</label>
                     <input type="checkbox" name="case2" id="case2">
+                    <label for="case2">Fleece</label>
                     <br>
-                    <label for="case3">Sweetshirts & Hoodies</label>
                     <input type="checkbox" name="case3" id="case3">
+                    <label for="case3">Sweetshirts & Hoodies</label>
                     <br>
-                    <label for="case4">Sweaters</label>
                     <input type="checkbox" name="case4" id="case4">
+                    <label for="case4">Sweaters</label>
                     <br>
-                    <label for="case5">Shirts</label>
                     <input type="checkbox" name="case5" id="case5">
+                    <label for="case5">Shirts</label>
                 </form>
                 <h5>Color</h5>
-                <div class="couleurs">
-                    <div class="cercle red"></div>
-                    <div class="cercle green"></div>
-                    <div class="cercle blue"></div>
-                    <div class="cercle black"></div></div>
-                <div class="couleurs2">
-                    <div class="cercle white"></div>
-                    <div class="cercle grey"></div>
-                    <div class="cercle yellow"></div>
-                    <div class="cercle brown"></div>
+                <div class="Gcouleurs">
+                    <div class="couleurs">
+                        <div class="cercle red"></div>
+                        <div class="cercle green"></div>
+                        <div class="cercle blue"></div>
+                        <div class="cercle black"></div>
+                    </div>
+                    <div class="couleurs2">
+                        <div class="cercle white"></div>
+                        <div class="cercle grey"></div>
+                        <div class="cercle yellow"></div>
+                        <div class="cercle brown"></div>
+                    </div>
                 </div>
             </div>
-            <div class="grid">
-                <div class="ficheProduit" id="item1">
-                    <div class="image" id="1">
-                        <img src="images/Carré_gris.jpg" alt="">
+            <div class="partieDroite">
+                <div class="filtrePertinence">
+                    <form method="get">
+                        <select name="pertinence" id="pertinence">
+                            <option value="Pertinence">Pertinence</option>
+                            <option value="Prix croissant">Prix croissant</option>
+                            <option value="Prix décroissant">Prix décroissant</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="grid">
+                    <div class="ficheProduit" id="item1">
+                        <div class="image" id="image1">
+                            <img src="images/Carré_gris.jpg" alt="image produit">
+                        </div>
+                        <div class="description" id="description1">
+                            <p><strong>ceci est un produit</strong></p>
+                            <p>prix</p>
+                        </div>
+                        <div class="taille">
+                            <p>taille</p>
+                        </div>
                     </div>
-                    <div class="description" id="1">
-                        <p>ceci est un produit</p>
-                        <p>prix</p>
+
+                    <div class="ficheProduit" id="item2">
+                        <div class="image" id="image2">
+                            <img src="images/Carré_gris.jpg" alt="image produit">
+                        </div>
+                        <div class="description" id="description2">
+                            <p><strong>ceci est un produit</strong></p>
+                            <p>prix</p>
+                        </div>
+                        <div class="taille">
+                            <p>taille</p>
+                        </div>
                     </div>
-                    <div class="taille">
-                        <p>taille</p>
+
+                    <div class="ficheProduit" id="item3">
+                        <div class="image" id="image3">
+                            <img src="images/Carré_gris.jpg" alt="image produit">
+                        </div>
+                        <div class="description" id="description3">
+                            <p><strong>ceci est un produit</strong></p>
+                            <p>prix</p>
+                        </div>
+                        <div class="taille">
+                            <p>taille</p>
+                        </div>
+                    </div>
+
+                    <div class="ficheProduit" id="item4">
+                        <div class="image" id="image4">
+                            <img src="images/Carré_gris.jpg" alt="image produit">
+                        </div>
+                        <div class="description" id="description4">
+                            <p><strong>ceci est un produit</strong></p>
+                            <p>prix</p>
+                        </div>
+                        <div class="taille">
+                            <p>taille</p>
+                        </div>
+                    </div>
+
+                    <div class="ficheProduit" id="item5">
+                        <div class="image" id="image5">
+                            <img src="images/Carré_gris.jpg" alt="image produit">
+                        </div>
+                        <div class="description" id="description5">
+                            <p><strong>ceci est un produit</strong></p>
+                            <p>prix</p>
+                        </div>
+                        <div class="taille">
+                            <p>taille</p>
+                        </div>
+                    </div>
+
+                    <div class="ficheProduit" id="item6">
+                        <div class="image" id="image6">
+                            <img src="images/Carré_gris.jpg" alt="image produit">
+                        </div>
+                        <div class="description" id="description6">
+                            <p><strong>ceci est un produit</strong></p>
+                            <p>prix</p>
+                        </div>
+                        <div class="taille">
+                            <p>taille</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="ficheProduit" id="item2">
-                    <div class="image" id="1">
-                        <img src="images/Carré_gris.jpg" alt="">
-                    </div>
-                    <div class="description" id="2">
-                        <p>ceci est un produit</p>
-                        <p>prix</p>
-                    </div>
-                    <div class="taille">
-                        <p>taille</p>
-                    </div>
-                </div>
-
-                <div class="ficheProduit" id="item3">
-                    <div class="image" id="1">
-                        <img src="images/Carré_gris.jpg" alt="">
-                    </div>
-                    <div class="description" id="2">
-                        <p>ceci est un produit</p>
-                        <p>prix</p>
-                    </div>
-                    <div class="taille">
-                        <p>taille</p>
-                    </div>
-                </div>
-
-                <div class="ficheProduit" id="item4">
-                    <div class="image" id="1">
-                        <img src="images/Carré_gris.jpg" alt="">
-                    </div>
-                    <div class="description" id="2">
-                        <p>ceci est un produit</p>
-                        <p>prix</p>
-                    </div>
-                    <div class="taille">
-                        <p>taille</p>
-                    </div>
-                </div>
-
-                <div class="ficheProduit" id="item5">
-                    <div class="image" id="1">
-                        <img src="images/Carré_gris.jpg" alt="">
-                    </div>
-                    <div class="description" id="2">
-                        <p>ceci est un produit</p>
-                        <p>prix</p>
-                    </div>
-                    <div class="taille">
-                        <p>taille</p>
-                    </div>
-                </div>
-
-                <div class="ficheProduit" id="item6">
-                    <div class="image" id="1">
-                        <img src="images/Carré_gris.jpg" alt="">
-                    </div>
-                    <div class="description" id="2">
-                        <p>ceci est un produit</p>
-                        <p>prix</p>
-                    </div>
-                    <div class="taille">
-                        <p>taille</p>
-                    </div>
+                <div class="loadmore">
+                    <form method="post">
+                        <input type="submit" value="Charger Plus">
+                    </form>
                 </div>
             </div>
         </section>
