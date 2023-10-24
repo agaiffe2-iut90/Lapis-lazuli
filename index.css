@@ -4,6 +4,23 @@
     padding: 0;
 }
 
+
+/* vidéo accueil*/
+.video-container {
+    position: relative;
+    max-width: 100%;
+ 
+}
+.text-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
 /* Style de base pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
