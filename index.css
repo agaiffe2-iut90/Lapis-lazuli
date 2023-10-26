@@ -96,8 +96,11 @@ nav a {
 footer{
     display: grid;
     justify-content: center;
-    background-color: lightgray;
+    background-color: whitesmoke;
+}
 
+ul {
+    list-style: none;
 }
 
 footer div{
@@ -105,7 +108,6 @@ footer div{
     margin-top: 30px;
     column-gap: 50px;
     margin-bottom: 100px;
-
 }
 
 footer div a{
@@ -114,13 +116,13 @@ footer div a{
     font-weight: bold;
 }
 
-footer div ul ul{
+#research-Email{
     border: 2px solid #333;
     padding: 10px;
     max-width: 400px; 
     display: flex;
     background-color: white;
-    column-gap: 100px;
+    column-gap: 10px;
     border-color: grey;
 }
 
@@ -132,10 +134,9 @@ footer div ul ul{
 #research{
     margin-top: 0px;
     max-width: 400px;
-
 }
 
-footer div ul ul input{
+#research-Email input{
     background-color: white;
     padding: 0px;
     height: 20px;
@@ -145,7 +146,7 @@ footer div ul ul input{
     border: none;
     outline: none; 
     color:grey;
-    width: 200px;
+    width: 290px;
 }
 
 .Sign-Up{
@@ -153,6 +154,35 @@ footer div ul ul input{
     outline: none; 
     font-weight:bold;
     font-size: large;
+}
 
+@media screen and (max-width: 976px){
+    .groupe1, .groupe2{
+        column-gap: 0px;
+    }
+
+    .footer-content{
+        column-gap: 0px;
+        margin-left: -20px;
+    }
+        
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        max-width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        margin-left:1px;
+
+    }
+
+    .groupe1, .groupe2 {
+        width: 100%; 
+        height: 80%;
+        column-gap: 10px;
+        margin-top: 80px;
+        margin-left: 1px;
+    }
 }
 
