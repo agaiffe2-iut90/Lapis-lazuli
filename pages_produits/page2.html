@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,136 +9,162 @@
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <script src="slider.js"></script>
 </head>
+
 <body>
     <header class="header">
-<nav>
-    <ul>
-        <li><strong>Ecommerce</strong></li>
-        <li>
-            <a href="shop_Page.html">Shop</a>
-        </li>
-        <li>
-            <a href="#">Stories</a>
-        </li>
-        <li>
-            <a href="#">About</a>
-        </li>
-        <li class="recherche">
-            <a href="#"><img src="icones/loupe.svg" alt="image d'une loupe">Search</a>
-        </li>
-        <div class="alignerdroite">
-            <li>
-                <a href="#"><img src="icones/sac.svg" alt="sac de course"></a>
-            </li>
-            <li>
-                <a href="#">Login</a>
-            </li>
-        </div>
-    </ul>
-</nav>
+        <nav>
+            <div class="nav">
+                <div class="alignergauche">
+                    <ul>
+                        <li>
+                            <strong>Lapis-Lazuli</strong></li>
+                        <li>
+                            <a href="#">Accueil</a>
+                        </li>
+                        <li><a href="shop_Page.html">Boutique</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#">À propos</a>
+                        </li>
+                        <li class="recherche">
+                            <a href="#"><img src="loupe.svg" alt="image d'une loupe">Rechercher</a>
+                        </li>
+                </div>
+                <div class="alignerdroite">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="sac.svg" alt="sac de course"></a>
+                        </li>
+                        <li>
+                            <a href="#">Connexion</a>
+                        </li>
+                    </ul>
+                </div>
+                </ul>
+            <div class="burger">
+                <ul>
+                    <li><img src="images/menu_burger.png"></img>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Accueil</a>
+                            </li>
+                            <li><a href="shop_Page.html">Boutique</a>
+            
+                            </li>
+                            <li>
+                                <a href="#">À propos</a>
+                            </li>
+                            <li class="recherche">
+                                <a href="#"><img src="loupe.svg" alt="image d'une loupe">Rechercher</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="sac.svg" alt="sac de course"></a>
+                            </li>
+                            <li>
+                                <a href="#">Connexion</a>
+                            </li>
+            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <h1> Les Bijoux</h1>
     <div id="slider">
-        <img src="im1.jpg" alt="Bijoux" id="slide">
-        <div id="precedent" onclick="ChangeSlide(-1)"></div>
-        <div id="suivant" onclick="ChangeSlide(1)">></div>
-    </div>
-    <br>
-    <div class="texte">
-        <div>
-            <h2>Les meilleur Bijoux</h2>
-            <h4>Prix: 600€</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ipsa voluptatum quas suscipit assumenda aspernatur ut incidunt, magnam aperiam non repellendus natus iste. Possimus facilis libero aut ipsa quibusdam corporis.</p>
-        </div>
-        <div>
-            <p class="quantite"> - 1 +</p>
-        </div>
-        <div class="choix">
-            <label for="choix-select">Faire votre choix:</label><br>
-            <select name="choix" id="choix-select">
-                <option value="">Faire votre choix</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-            </select>
-        </div> <br>
+        <img src="im3.jpg" alt="Bijoux" id="slide">
+        <div id="precedent" onclick="ChangeSlide(-1)">&lt;</div>
+        <div id="suivant" onclick="ChangeSlide(1)">&gt;</div>
+        <div class="texte">
+            
+            <div>
+                <h2>Les meilleur Bijoux</h2>
+                <h4>Prix: 600€ </h4>
+                <p>Chez LAPIS-LAZULI, nous sommes fiers de vous offrir une sélection exceptionnelle de produits de qualité conçus pour satisfaire vos besoins et surpasser vos attentes. Que vous recherchiez des vêtements élégants, des gadgets innovants, des articles de maison pratiques, ou bien d'autres produits, 
+                notre boutique en ligne est l'endroit idéal pour trouver ce que vous cherchez.</p>
+            </div>
+            <div>
+                <br>
+                <p class="quantite">-1+</p>
+            
+</select>
 
-        <div>
-            <button class="addPanier">Ajouter au panier</button>
+                  
+            </div>
+            <div class="choix">
+                <label for="choix-select">Faire votre choix:</label><br>
+                <select name="choix" id="choix-select">
+                    <option value="">Faire votre choix</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div> <br>
+    
+            <div>
+                <button class="addPanier">Ajouter au panier</button>
+            </div>
+            <br>
+            <div>
+                <button class="achat">Acheter</button>
+            </div>
         </div>
         <br>
-        <div>
-            <button class="achat">Acheter</button>
+    </div>
+    
+<br>
+<footer>
+    <div class="footer-content">
+        <div class="groupe1">
+        <ul id="research">
+            <li><b id="Sign-up">Sign up for our newsletter</b></li>
+            <li><br></li>
+            <li><strong>Be the first to know about our special offers, new product launches, and events</strong></li>
+            <li><br></li>
+            <li id="research-Email">
+            <input type="text" placeholder="Email Adress" class="Email-Adress">
+            <a href="#" class="Sign-Up">Sign Up</a>                 
+            </li>
+        </ul>
+        </div>
+        <div class="groupe2">
+        <ul>
+            <li><strong>Shop</strong></li>
+            <li><br></li>
+            <li><a href="#">Women's</a></li>
+            <li><a href="#">Men's</a></li>
+            <li><a href="#">Kids'</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Equipment</a></li>
+            <li><a href="#">By Activity</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sale</a></li>
+        </ul>
+        <ul>
+            <li><strong>Help</strong></li>
+            <li><br></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Size Chart</a></li>
+            <li><a href="#">Returns & Warranty</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><strong>About</strong></li>
+            <li><br></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Responsibility</a></li>
+            <li><a href="#">Technology & Innovation</a></li>
+            <li><a href="#">Explore our stories</a></li>
+        </ul>
         </div>
     </div>
-   
-</div>
-    
-     <footer>
-        <div class="flexbox">
-            <ul id="research">
-                <b id="Sign-up">Sign up for our newsletter</b>
-                <br>
-                <br>
-                <strong>Be the first to know about our special offers, new product launches, and events</strong>
-                <br>
-                <br>
-                <ul>
-                <input type="text" value="Email Adress" class="Email-Adress">
-                <a href="#" class="Sign-Up">Sign Up</a>                 
-                </ul>
-            </ul>
-            <ul>
-                <strong>Shop</strong>
-                <br>
-                <br>
-                <a href="#">Women's</a>
-                <br>
-                <a href="#">Men's</a>
-                <br>
-                <a href="#">Kids'</a>
-                <br>
-                <a href="#">Shoes</a>
-                <br>
-                <a href="#">Equipment</a>
-                <br>
-                <a href="#">By Activity</a>
-                <br>
-                <a href="#">Gift Cards</a>
-                <br>
-                <a href="#">Sale</a>
-            </ul>
-            <ul>
-                <strong>Help</strong>
-                <br>
-                <br>
-                <a href="#">Help Center</a>
-                <br>
-                <a href="#">Order Status</a>
-                <br>
-                <a href="#">Size Chart</a>
-                <br>
-                <a href="#">Returns & Warranty</a>
-                <br>
-                <a href="#">Contact us</a>
-            </ul>
-            <ul>
-                <strong>About</strong>
-                <br>
-                <br>
-                <a href="#">About Us</a>
-                <br>
-                <a href="#">Responsibility</a>
-                <br>
-                <a href="#">Technology & Innovation</a>
-                <br>
-                <a href="#">Explore our stories</a>
-            </ul>
-        </div>
-    </footer>
+</footer>
+
 </body>
 </html>
