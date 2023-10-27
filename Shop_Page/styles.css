@@ -21,7 +21,7 @@ body {
 
 nav {
     display: inline-block;
-    background-color: #003399;
+    background-color: #06183b;
     width: 100%;
     border-bottom: 1px solid grey;
 }
@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 header {
-    background-color: #003399;
+    background-color: #06183b;
     padding-top: 1%;
     padding-bottom: 1%;
 }
