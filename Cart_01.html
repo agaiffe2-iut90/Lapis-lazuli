@@ -8,62 +8,95 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><strong>Ecommerce</strong></li>
-            <li>
-                <a href="shop_Page.html">Shop</a>
-            </li>
-            <li>
-                <a href="#">Stories</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li class="recherche">
-                <a href="#"><img src="icones/loupe.svg" alt="image d'une loupe">Search</a>
-            </li>
-            <div class="alignerdroite">
-                <li>
-                    <a href="#"><img src="icones/sac.svg" alt="sac de course"></a>
-                </li>
-                <li>
-                    <a href="#">Login</a>
-                </li>
+        <div class="nav">
+            <div class="alignergauche">
+                <ul>
+                    <li>
+                        <strong>Lapis-Lazuli</strong></li>
+                    <li>
+                        <a href="#">Accueil</a>
+                    </li>
+                    <li><a href="shop_Page.html">Boutique</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">À propos</a>
+                    </li>
+                    <li class="recherche">
+                        <a href="#"><img src="icones/loupe.svg" alt="image d'une loupe">Rechercher</a>
+                    </li>
             </div>
-        </ul>
+            <div class="alignerdroite">
+                <ul>
+                    <li>
+                        <a href="#"><img src="icones/sac.svg" alt="sac de course"></a>
+                    </li>
+                    <li>
+                        <a href="#">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+            </ul>
+        <div class="burger">
+            <ul>
+                <li><img src="images/menu_burger.png"></img>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Accueil</a>
+                        </li>
+                        <li><a href="shop_Page.html">Boutique</a>
+        
+                        </li>
+                        <li>
+                            <a href="#">À propos</a>
+                        </li>
+                        <li class="recherche">
+                            <a href="#"><img src="icones/loupe.svg" alt="image d'une loupe">Rechercher</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="icones/sac.svg" alt="sac de course"></a>
+                        </li>
+                        <li>
+                            <a href="#">Connexion</a>
+                        </li>
+        
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </nav>
 <main>
-    <h1 id="h1-1">Your Cart</h1>
-    <p id="p0">Not ready to checkout? Continue Shopping</p>
+    <h1 id="h1-1">Votre Panier</h1>
+    <p id="p0">Vous n'êtes pas prêt à passer à la caisse ? Poursuivre les achats</p>
     <br>
     <div class="grid">
         <div class="grid-1">
             <div id="item1">
                 <div id="item1a">
-                    <img src="Carre_gris.jpg" alt="article" id="img1" width="140" height="140"> 
+                    <img src="satue_batman.avif" alt="article" id="img1" width="140" height="140"> 
                 </div>
                 <ul id="item1b">
-                    <li><h2>Bijoux 1</h2></li>
-                    <li><p id="p1">Size:</p></li>
-                    <li><p id="p2">Quantity:</p></li>
+                    <li><h2>Batman moche</h2></li>
+                    <li><p id="p1">Taille:</p></li>
+                    <li><p id="p2">Quantité:</p></li>
                     <li id="item1ba">
-                        <a id="p3">Prix:</a>
-                        <a href="#">Remove</a>
+                        <a id="p3">500€</a>
+                        <a href="#">Supprimer</a>
                     </li>
                 </ul>
             </div>
             <hr id="ligné-1">
             <div id="item2">
                 <div id="item2a">
-                    <img src="Carre_gris.jpg" alt="article" id="img2" width="140" height="140"> 
+                    <img src="bague_immonde.avif" alt="article" id="img2" width="140" height="140"> 
                 </div>
                 <ul id="item2b">
-                    <li><h2>Bijoux 2</h2></li>
-                    <li><p id="p4">Size:</p></li>
-                    <li><p id="p5">Quantity:</p></li>
+                    <li><h2>Bague immonde</h2></li>
+                    <li><p id="p4">Taille:</p></li>
+                    <li><p id="p5">Quantité:</p></li>
                     <li id="item2ba">
-                        <a id="p6">Prix:</a>
-                        <a href="#">Remove</a>
+                        <a id="p6">350€</a>
+                        <a href="#">Supprimer</a>
                     </li>
                 </ul>
             </div>
@@ -71,49 +104,49 @@
             <br>
         <div class="grid-2">
             <div id="item4">
-                <h1>Order Summary</h1>
-                <input type="text" placeholder="Enter coupon code here" id="research-coupon">
+                <h1>Résumé de la commande</h1>
+                <input type="text" placeholder="Code arnaque" id="research-coupon">
                 <br>
                 <div id="item4a">
-                    <b>Subtotal</b>
+                    <b>Sous-total</b>
                     <br>
-                    <b>$200</b>
+                    <b>850€</b>
                 </div>
                 <br>
                 <div id="item4b">
-                    <b>Shipping</b>
+                    <b>Expédition</b>
                     <br>
-                    <b id="gray-text">Calculated at the next step</b>
+                    <b id="gray-text">Calculé à l'étape suivante</b>
                 </div>
                 <hr id="ligné-last">
                 <div id="item4c">
                     <b>Total</b>
                     <br>
-                    <b>$200</b>
+                    <b>850€</b>
                 </div>
                 <br>
                 <br>
-                <a href="#" class="centered-text" >Continue to check out</a>
+                <a href="#" class="centered-text" >Poursuivre la consultation</a>
             </div>
         </div>
         <br>
         <div class="grid-3">
             <div id="item3">
-                <h2 id="order-information">Order Information</h2>
+                <h2 id="order-information">Informations sur les commandes</h2>
                 <hr>
                 <ul id="Return_policy">
-                    <li><a>Return Policy</a></li>
+                    <li><a>Politique de retour</a></li>
                     <li><a href="#">-</a></li>
                 </ul>
-                <p>This is our example return policy which is everything you need to know about our returns.</p>
+                <p>Voici notre exemple de politique de retour qui contient tout ce que vous devez savoir sur les retours.</p>
                 <hr id="ligné-2">
                 <div id="Shipping_Options1">
-                    <a>Shipping Options</a>
+                    <a>Options d'expédition</a>
                     <a href="#">+</a>                    
                 </div>
                 <hr>
                 <div id="Shipping_Options2">
-                    <a>Shipping Options</a>
+                    <a>Options d'expédition</a>
                     <a href="#">+</a>                    
                 </div>
                 <hr id="last_hr">
@@ -125,45 +158,42 @@
     <div class="footer-content">
         <div class="groupe1">
         <ul id="research">
-            <li><b id="Sign-up">Sign up for our newsletter</b></li>
+            <li><b id="Sign-up">S'inscrire à notre lettre d'information</b></li>
             <li><br></li>
-            <li><strong>Be the first to know about our special offers, new product launches, and events</strong></li>
+            <li><strong>Soyez le premier à être informé de nos offres spéciales, du lancement de nouveaux produits et des événements.</strong></li>
             <li><br></li>
             <li id="research-Email">
             <input type="text" placeholder="Email Adress" class="Email-Adress">
-            <a href="#" class="Sign-Up">Sign Up</a>                 
+            <a href="#" class="Sign-Up">S'inscrire</a>                 
             </li>
         </ul>
         </div>
         <div class="groupe2">
         <ul>
-            <li><strong>Shop</strong></li>
+            <li><strong>Boutique</strong></li>
             <li><br></li>
-            <li><a href="#">Women's</a></li>
-            <li><a href="#">Men's</a></li>
-            <li><a href="#">Kids'</a></li>
-            <li><a href="#">Shoes</a></li>
-            <li><a href="#">Equipment</a></li>
-            <li><a href="#">By Activity</a></li>
-            <li><a href="#">Gift Cards</a></li>
-            <li><a href="#">Sale</a></li>
+            <li><a href="#">Femme</a></li>
+            <li><a href="#">Homme</a></li>
+            <li><a href="#">Enfant</a></li>
+            <li><a href="#">Cartes-cadeaux</a></li>
+            <li><a href="#">Vente</a></li>
         </ul>
         <ul>
-            <li><strong>Help</strong></li>
+            <li><strong>Aide</strong></li>
             <li><br></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Order Status</a></li>
-            <li><a href="#">Size Chart</a></li>
-            <li><a href="#">Returns & Warranty</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Statut de la commande</a></li>
+            <li><a href="#">Tableau des tailles</a></li>
+            <li><a href="#">Retours et garantie</a></li>
+            <li><a href="#">Contactez-nous</a></li>
         </ul>
         <ul>
-            <li><strong>About</strong></li>
+            <li><strong>A propos</strong></li>
             <li><br></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Responsibility</a></li>
-            <li><a href="#">Technology & Innovation</a></li>
-            <li><a href="#">Explore our stories</a></li>
+            <li><a href="#">A propos de nous</a></li>
+            <li><a href="#">Responsabilité</a></li>
+            <li><a href="#">Technologie et innovation</a></li>
+            <li><a href="#">Découvrez nos histoires</a></li>
         </ul>
         </div>
     </div>
