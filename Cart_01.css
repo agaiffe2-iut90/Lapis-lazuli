@@ -2,16 +2,20 @@ body {
     margin: 0;
 }
 
+.nav {
+    display: flex;
+}
+
 nav {
     display: inline-block;
-    background-color: black;
+    background-color: #003399;
     width: 100%;
-    border-bottom: 1px solid grey;  
+    border-bottom: 1px solid grey;
 }
 
 nav ul {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
     padding: 0;
 }
 
@@ -21,8 +25,7 @@ nav li {
     vertical-align: top;
     color: white;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -37,15 +40,61 @@ nav a {
     color: white;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 .recherche img {
     padding-right: 5px;
     vertical-align: middle;
 }
 
-.alignerdroite {
-    float: right;
+.alignergauche {
+    flex: 75%;
 }
 
+.alignerdroite {
+    display: flex;
+    justify-content: flex-end;
+    flex: 25%;
+}
+
+.burger {
+    display: none;
+
+}
+
+.submenu {
+    display: none;
+}
+
+ @media (max-width:950px){
+    .alignerdroite li {
+        display: none;
+    }
+
+    .alignergauche {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger li {
+        display: block;
+    }
+
+    .burger:hover .submenu{
+        display: block;
+    }
+
+    .burger .submenu li {
+        padding: 0;
+    }
+
+
+ }
 #h1-1{
     margin-left: 10%;
     margin-top:3%;
