@@ -8,7 +8,7 @@ body {
 
 nav {
     display: inline-block;
-    background-color: #003399;
+    background-color: #06183b;
     width: 100%;
     border-bottom: 1px solid grey;
 }
@@ -57,6 +57,8 @@ nav a:hover {
     display: flex;
     justify-content: flex-end;
     flex: 25%;
+}
+
 }
 footer{
     display: grid;
