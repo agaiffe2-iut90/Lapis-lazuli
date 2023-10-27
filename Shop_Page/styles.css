@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Public sans";
-    src: url(./polices/PublicSans-Regular.ttf) format(truetype);
+    src: url(../PublicSans-Regular.ttf) format(truetype);
 }
 
 * {
