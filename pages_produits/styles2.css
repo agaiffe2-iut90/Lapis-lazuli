@@ -1,18 +1,21 @@
- boby {
+body {
     margin: 0;
+}
 
-}  
+.nav {
+    display: flex;
+}
 
 nav {
     display: inline-block;
-    background-color: #0c0c0b;
+    background-color: #003399;
     width: 100%;
-    border-bottom: 1px solid grey;  
+    border-bottom: 1px solid grey;
 }
 
 nav ul {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
     padding: 0;
 }
 
@@ -22,8 +25,7 @@ nav li {
     vertical-align: top;
     color: white;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -35,7 +37,11 @@ nav li img {
 
 nav a {
     text-decoration: none;
-    color: rgb(236, 227, 227);
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .recherche img {
@@ -43,14 +49,23 @@ nav a {
     vertical-align: middle;
 }
 
+.alignergauche {
+    flex: 75%;
+}
+
 .alignerdroite {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    flex: 25%;
 }
 footer{
     display: grid;
     justify-content: center;
-    background-color: lightgray;
+    background-color: whitesmoke;
+}
 
+ul {
+    list-style: none;
 }
 
 footer div{
@@ -58,7 +73,6 @@ footer div{
     margin-top: 30px;
     column-gap: 50px;
     margin-bottom: 100px;
-
 }
 
 footer div a{
@@ -67,13 +81,13 @@ footer div a{
     font-weight: bold;
 }
 
-footer div ul ul{
+#research-Email{
     border: 2px solid #333;
     padding: 10px;
     max-width: 400px; 
     display: flex;
     background-color: white;
-    column-gap: 100px;
+    column-gap: 10px;
     border-color: grey;
 }
 
@@ -85,10 +99,9 @@ footer div ul ul{
 #research{
     margin-top: 0px;
     max-width: 400px;
-
 }
 
-footer div ul ul input{
+#research-Email input{
     background-color: white;
     padding: 0px;
     height: 20px;
@@ -98,7 +111,7 @@ footer div ul ul input{
     border: none;
     outline: none; 
     color:grey;
-    width: 200px;
+    width: 290px;
 }
 
 .Sign-Up{
@@ -106,13 +119,36 @@ footer div ul ul input{
     outline: none; 
     font-weight:bold;
     font-size: large;
-
 }
 
+@media screen and (max-width: 976px){
+    .groupe1, .groupe2{
+        column-gap: 0px;
+    }
 
+    .footer-content{
+        column-gap: 0px;
+        margin-left: -20px;
+    }
+        
+}
 
+@media screen and (max-width: 768px) {
+    .footer-content {
+        max-width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        margin-left:1px;
 
-
+    }
+    .groupe1, .groupe2 {
+        width: 100%; 
+        height: 80%;
+        column-gap: 10px;
+        margin-top: 80px;
+        margin-left: 1px;
+    }
+}
 
 
 
@@ -123,7 +159,6 @@ body {
 
 #slider {
     position: relative;
-    width: 2000px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -138,13 +173,14 @@ body {
     color: rgba(220, 220, 220, 0.8);
     background-color: rgba(8, 8, 8, 0.8);
     padding: 5px;
+    top: 180px;
 }
 #precedent {
-    left: 0;
+    left: 5px;
 }
 
 #suivant {
-    right: 2;
+    right: 700px;
 }
 
 #slider:hover #precedent,#slider:hover #suivant {
@@ -165,49 +201,58 @@ label {
     font-size: 0.9rem;
     padding: 2px 5px;
   }
-  .machin {
-    display: flex;
-    flex-direction: row;
-    gap: 2%;
+  
+  h1 {
+    color:rgb(240, 232, 232);
+    
   }
   
+
   h2 {
+    color:rgb(240, 232, 232);
     width: 450px;
     height: 35px;
-    border: solid rgb(0, 0, 0) 0px;
+    border: solid rgb(245, 239, 239) 0px;
     margin-left: 50px;
     margin-top: 50px;
   }
   
   h4 {
-  
+    color:rgb(240, 232, 232);
     margin-left: 50px;
   }
   
   p {
+    color:rgb(240, 232, 232);
     width: 450px;
     height: 100px;
-    border: solid rgb(0, 0, 0) 0px;
+    border: solid rgb(243, 232, 232) 0px;
     margin-left: 50px;
   }
   
   
   .quantite {
+    color:rgb(240, 232, 232);
     width: 100px;
     height: 30px;
     margin-left: 50px;
-    border: solid gray 2px;
+    border: solid rgb(230, 20, 20) 2px;
   }
   
   .choix {
+    color:rgb(212, 20, 20);
     margin-left: 50px;
+    
+
+
   }
   
   .addPanier {
     background-color: gray;
     border: solid black 2px;
     margin-left: 50px;
-    color: white;
+    color: rgb(7, 6, 7);
+    background: rgb(34, 145, 182); /* Remplacez "lightblue" par la couleur de fond souhaitée */
   }
   
   .achat {
@@ -218,6 +263,116 @@ label {
   }
   
   
-  .textlivr {
+  .texte {
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.burger {
+    display: none;
+
+}
+
+.submenu {
+    display: none;
+}
+
+ @media (max-width:950px){
+    .alignerdroite li {
+        display: none;
+    }
+
+    .alignergauche {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger li {
+        display: block;
+    }
+
+    .burger:hover .submenu{
+        display: block;
+    }
+
+    .burger .submenu li {
+        padding: 0;
+    }
+
+
+ }
+
+
+
+
+ body {
+    background-image: url('istockphoto.webp');
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir l'ensemble de l'écran */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+  
+
+/* responsive*/
+
+ /* Styles généraux */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour les petits écrans (moins de 768px de largeur) */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Aligner les éléments verticalement */
+    }
+
+    .alignergauche,
+    .alignerdroite {
+        width: 100%;
+    }
+
+    .alignerdroite ul {
+        text-align: center; /* Centrer le texte */
+    }
+
+    .burger {
+        display: block; /* Afficher le menu hamburger */
+    }
+
+    .header {
+        padding: 10px; /* Espacement du haut pour faire de la place pour le menu hamburger */
+    }
+
+    .submenu {
+        display: none; /* Cacher le sous-menu du burger par défaut */
+    }
+}
+
     margin-left: 1%;
 }
