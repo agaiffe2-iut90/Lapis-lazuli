@@ -279,7 +279,7 @@ nav a:hover {
 }
 
 /* footer */
-footer {
+footer{
     display: grid;
     justify-content: center;
     background-color: whitesmoke;
@@ -289,71 +289,69 @@ ul {
     list-style: none;
 }
 
-footer div {
-    display: flex;
+footer div{
+    display:flex;
     margin-top: 30px;
     column-gap: 50px;
     margin-bottom: 100px;
 }
 
-footer div a {
+footer div a{
     color: grey;
     text-decoration: none;
     font-weight: bold;
 }
 
-#research-Email {
+#research-Email{
     border: 2px solid #333;
     padding: 10px;
-    max-width: 400px;
+    max-width: 400px; 
     display: flex;
     background-color: white;
     column-gap: 10px;
     border-color: grey;
 }
 
-#Sign-up {
+#Sign-up{
     font-size: 35px;
     color: black;
 }
 
-#research {
+#research{
     margin-top: 0px;
     max-width: 400px;
 }
 
-#research-Email input {
+#research-Email input{
     background-color: white;
     padding: 0px;
     height: 20px;
 }
 
-.Email-Adress {
+.Email-Adress{
     border: none;
-    outline: none;
-    color: grey;
+    outline: none; 
+    color:grey;
     width: 290px;
 }
 
-.Sign-Up {
+.Sign-Up{
     border: none;
-    outline: none;
-    font-weight: bold;
+    outline: none; 
+    font-weight:bold;
     font-size: large;
 }
 
-@media screen and (max-width: 976px) {
-
-    .groupe1,
-    .groupe2 {
+@media screen and (max-width: 976px){
+    .groupe1, .groupe2{
         column-gap: 0px;
     }
 
-    .footer-content {
+    .footer-content{
         column-gap: 0px;
         margin-left: -20px;
     }
-
+        
 }
 
 @media screen and (max-width: 768px) {
@@ -361,13 +359,12 @@ footer div a {
         max-width: 100%;
         padding: 20px;
         flex-direction: column;
-        margin-left: 1px;
+        margin-left:1px;
 
     }
 
-    .groupe1,
-    .groupe2 {
-        width: 100%;
+    .groupe1, .groupe2 {
+        width: 100%; 
         height: 80%;
         column-gap: 10px;
         margin-top: 80px;
