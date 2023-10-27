@@ -1,6 +1,7 @@
 h1 {
     color: #ffffff;
     font-size: 48px;
+    font-family: "Public Sans";
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 1%;
@@ -10,12 +11,24 @@ h1 {
 h2 {
     color: #b9b24a;
     font-size: 20px;
+    font-family: "Public Sans";
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
 }
 
+p {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Public Sans";
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+
+
+}
 
 @media screen and (max-width: 480px) {
     h1 {
@@ -26,6 +39,9 @@ h2 {
         font-size: 15px;
     }
 
+    p {
+        font-size: 15px;
+    }
 }
 
 /*background vidéo*/
@@ -39,33 +55,104 @@ h2 {
     top: 0;
     bottom: 0;
     z-index: -1;
-    }
+}
+
+/*sections*/
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b3a049a6;
+    margin: 200px;
+    border-radius: 5%;
+
+}
+
+.images {
+    display: flex;
+
+}
+
+.bijoux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
+/*images*/
+.images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.logo_agm {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.Logo_SoSwiss {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.ilesdeale {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+
+
+
+/*partenaires*/
+.partenaires {
+    justify-content: center;
+    align-items: center;
+
+
+}
 
 /*bouton*/
-  .bouttonbis {
+
+.buttonbis {
     display: block;
     margin: auto;
     justify-content: center;
     align-items: center;
-    width: 194px;
-    height: 50px;
+    width: 200px;
+    height: 75px;
     text-align: center;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     background-color: rgba(161, 161, 161, 0);
-    border-color: #000000;
+    border-color: #b39f49;
     border-style: solid;
     border-width: 2px;
-  }
+}
 
-  .button1 :hover {
+.button1 :hover {
     text-decoration: underline;
-    background-color: #7c928e;
+    background-color: #b39f49;
     color: antiquewhite;
     cursor: pointer;
-  }
+}
 
 /* Style de base pour le corps de la page */
 body {
@@ -81,16 +168,20 @@ body {
     margin: 0;
 }
 
+.nav {
+    display: flex;
+}
+
 nav {
     display: inline-block;
-    background-color: black;
+    background-color: #06183b;
     width: 100%;
     border-bottom: 1px solid grey;
 }
 
 nav ul {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
     padding: 0;
 }
 
@@ -100,8 +191,7 @@ nav li {
     vertical-align: top;
     color: white;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -116,13 +206,60 @@ nav a {
     color: white;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 .recherche img {
     padding-right: 5px;
     vertical-align: middle;
 }
 
+.alignergauche {
+    flex: 75%;
+}
+
 .alignerdroite {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    flex: 25%;
+}
+
+.burger {
+    display: none;
+
+}
+
+.submenu {
+    display: none;
+}
+
+@media (max-width:950px) {
+    .alignerdroite li {
+        display: none;
+    }
+
+    .alignergauche {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger li {
+        display: block;
+    }
+
+    .burger:hover .submenu {
+        display: block;
+    }
+
+    .burger .submenu li {
+        padding: 0;
+    }
+
+
 }
 
 /* Style de la section des produits en vedette */
