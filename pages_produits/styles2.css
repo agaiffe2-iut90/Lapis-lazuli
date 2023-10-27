@@ -6,6 +6,10 @@ body {
     display: flex;
 }
 
+footer {
+    background-color: light-gray;
+}
+
 nav {
     display: inline-block;
     background-color: #06183b;
