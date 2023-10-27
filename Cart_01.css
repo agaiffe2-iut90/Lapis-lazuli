@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Public sans";
-    src: url(./polices/PublicSans-Regular.ttf) format(truetype);
+    src: url(./PublicSans-Regular.ttf) format(truetype);
 }
 
 *{
@@ -198,7 +198,7 @@ hr{
 
 #item4b{
     display:flex;
-    column-gap: 19%;
+    column-gap: 16%;
 }
 
 #item4c{
