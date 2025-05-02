@@ -6,6 +6,9 @@ Notre groupe est composé d' Anna GAIFFE, Mickaël MARCO, Nathan PONTHIEU et Sim
 
 
 Anna : Page d'accueil
+
 Mickaêl : Page Panier
+
 Nathan : Page d'achat
+
 Simone : Page Produit
